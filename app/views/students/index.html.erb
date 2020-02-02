@@ -1,0 +1,9 @@
+<% @students.each do |student| %>
+
+    <ul>
+    <%# Check the file in models with the method to_s%>
+        <li><a href="/students/<%= student.id %>"><%= student.to_s %></a></li> 
+        
+    </ul>
+ 
+<% end %>
